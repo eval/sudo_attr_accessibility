@@ -4,11 +4,11 @@ require File.expand_path('../lib/sudo_attr_accessibility/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Gert Goet"]
   gem.email         = ["gert@thinkcreate.nl"]
-  gem.description   = %q{See su_attr_accessibility}
-  gem.summary       = %q{See su_attr_accessibility}
+  gem.description   = %q{This gem is obsolete due to renaming. Please use su_attr_accessibility}
+  gem.summary       = %q{This gem is obsolete due to renaming. Please use su_attr_accessibility}
   gem.homepage      = "https://github.com/eval/sudo_attr_accessibility"
   gem.license       = "MIT"
-  gem.post_install_message = "PostInstall.txt"
+  gem.post_install_message = File.read("PostInstall.txt")
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
