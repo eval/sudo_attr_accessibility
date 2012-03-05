@@ -4,10 +4,11 @@ require File.expand_path('../lib/sudo_attr_accessibility/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Gert Goet"]
   gem.email         = ["gert@thinkcreate.nl"]
-  gem.description   = %q{Make all attributes of an AR-model accessible to some roles}
-  gem.summary       = %q{Make all attributes of an AR-model accessible to some roles}
+  gem.description   = %q{See su_attr_accessibility}
+  gem.summary       = %q{See su_attr_accessibility}
   gem.homepage      = "https://github.com/eval/sudo_attr_accessibility"
   gem.license       = "MIT"
+  gem.post_install_message = "PostInstall.txt"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -19,6 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "activesupport", ">= 3.0.0"
   gem.add_dependency "activemodel", ">= 3.0.0"
+  gem.add_dependency "su_attr_accessibility", ">= 0.5.0"
 
   gem.add_development_dependency "rspec", "~> 2.7.0"
   gem.add_development_dependency "ZenTest", "~> 4.6.2"

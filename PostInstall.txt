@@ -1,0 +1,1 @@
+WARNING: This gem was renamed to su_attr_accessibility (see https://github.com/eval/su_attr_accessibility). Please update your dependencies!
